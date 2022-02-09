@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?size=1&title=js
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{   
+    "title" : "tarea1",
+    "description" : "trabajo para mi ",
+    "done" : true
+}
+
+###
+GET http://localhost:3000/api/tasks/6202ece53ee5243eb48eef38
+
+###
+DELETE http://localhost:3000/api/tasks/62029a800a59e2a6ba718e17
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+PUT http://localhost:3000/api/tasks/6202e42e2bd1e2ad2292fbfc
+Content-Type: application/json
+
+{
+    "title" : "Hacer un sitio web con PHP"
+}
